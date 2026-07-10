@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f8;
+    color: #17172a;
+    line-height: 1.6;
+}
+
+#wrapper {
+    width: min(1100px, 92%);
+    margin: 28px auto;
+    background: #ffffff;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
+}
+
+header {
+    background: #2f2a72;
+    color: #ffffff;
+    padding: 28px 34px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.35rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.05rem;
+}
+
+nav {
+    background: #201d4b;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #5b55a8;
+}
+
+main {
+    padding: 30px;
+}
+
+.hero,
+.content-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 28px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2f2a72;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.85rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #312d78;
+    margin-top: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin: 24px 0;
+}
+
+.card {
+    border: 1px solid #8f8ac9;
+    background: #fafaff;
+    border-radius: 9px;
+    padding: 18px;
+    margin: 0 0 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 22px 0;
+}
+
+th,
+td {
+    border: 1px solid #706ab8;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    background: #2f2a72;
+    color: #ffffff;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin: 18px auto 0;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 680px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+}
+
+button {
+    width: auto;
+    background: #2f2a72;
+    color: #ffffff;
+    border: 0;
+    padding: 11px 22px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #5b55a8;
+}
+
+footer {
+    background: #201d4b;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    #wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
