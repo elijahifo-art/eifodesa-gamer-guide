@@ -3,53 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Gamer Guide helps visitors find video game reviews, recommendations, platform comparisons, and beginner gaming advice.">
-    <meta name="keywords" content="video games, gaming, reviews, recommendations, PlayStation, Xbox, Nintendo, PC">
-    <meta name="author" content="Elijah Ifo-Desai">
+
+    <meta name="description"
+          content="Contact The Gamer Guide to ask gaming questions, suggest game reviews, or request game recommendations.">
+
+    <meta name="keywords"
+          content="gaming contact form, game suggestions, gaming questions, game review request">
+
     <title>The Gamer Guide :: Contact</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <div id="wrapper">
-<header>
-    <h1>The Gamer Guide</h1>
-    <p>Reviews, recommendations, platforms, and beginner gaming help</p>
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="recommendations.html">Recommendations</a></li>
-        <li><a href="platforms.html">Platforms</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-<main>
-    <h2>Contact The Gamer Guide</h2>
-    <p>Use this form to ask a question, suggest a game review, or request a recommendation. The form is part of the project site and uses action="#" because no server-side processing is required.</p>
-    <p>Email: <a href="mailto:eifodesa@asu.edu">eifodesa@asu.edu</a></p>
-    <form id="contact-form" action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="platform">Favorite Gaming Platform</label>
-        <select id="platform" name="platform">
-            <option value="pc">PC</option>
-            <option value="playstation">PlayStation</option>
-            <option value="xbox">Xbox</option>
-            <option value="nintendo">Nintendo</option>
-        </select>
-        <label for="interest">Game Interest</label>
-        <input type="text" id="interest" name="interest" placeholder="Action, sports, story, multiplayer, etc.">
-        <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="5"></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</main><footer>
-    Copyright &copy; 2026 The Gamer Guide<br>
-    Contact: <a href="mailto:eifodesa@asu.edu">eifodesa@asu.edu</a> | <a href="https://www.ign.com" target="_blank">IGN</a>
-</footer>
+
+    <header>
+        <h1>The Gamer Guide</h1>
+        <p>Reviews, recommendations, platforms, and beginner gaming help</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="platforms.html">Platforms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Contact The Gamer Guide</h2>
+
+        <p>
+            Use this form to ask a question, suggest a game review, or
+            request a recommendation.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:eifodesa@asu.edu">eifodesa@asu.edu</a>
+        </p>
+
+        <form method="post" action="#">
+
+            <label for="name">Name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+            <label for="platform">Favorite Gaming Platform</label>
+            <select id="platform" name="platform">
+                <option value="">Choose a platform</option>
+                <option value="pc">PC</option>
+                <option value="playstation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="nintendo">Nintendo</option>
+            </select>
+
+            <label for="interest">Game Interest</label>
+            <input type="text"
+                   id="interest"
+                   name="interest"
+                   placeholder="Action, sports, story, multiplayer, etc.">
+
+            <label for="comments">Comments</label>
+            <textarea id="comments"
+                      name="comments"
+                      rows="6"
+                      required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 The Gamer Guide</p>
+
+        <p>
+            Contact:
+            <a href="mailto:eifodesa@asu.edu">eifodesa@asu.edu</a>
+            |
+            <a href="https://www.ign.com/" target="_blank"
+               rel="noopener noreferrer">IGN</a>
+        </p>
+    </footer>
 
 </div>
 </body>
